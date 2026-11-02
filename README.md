@@ -58,7 +58,7 @@ Then in `agy`: open `/model`, select your model, press Tab on `Context` until it
 - **Cost.** `agy` shows `512K 1.3x` and `900K 1.8x` multipliers. Long uncached requests cost more.
 - **Quality.** Very long contexts can make answers worse. 256K is a default for a reason.
 - **Unofficial.** This changes machine code in a Google binary. Not supported by Google. Use at your own risk.
-- **Linux x86-64 only.** Patch applies on `agy` 1.4.12.
+- **Linux x86-64 only.** Tested on `agy` 1.4.12 with Gemini 3.8 Flash at `900K`: context grew to 367K tokens with no compaction, and the model recalled a line from the first file read.
 
 ## Credits
 
